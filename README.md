@@ -43,6 +43,3 @@
   - `https://github.com/eamonxg/luci-app-aurora-config` 的 `master` 分支：`luci-app-aurora-config`
 - 编译产物会按 `<SDK>-<软件包>-<架构>.zip` 分组打包，上传到本次 workflow 的 `Artifacts`，并发布到 `Packages` 这个 [Releases](https://github.com/laipeng668/openwrt-ci-roc/releases/tag/Packages)；普通分组内的 `.apk/.ipk` 文件也使用对应架构后缀。`luci-theme-aurora` 是通用主题包，使用 `all` 架构后缀，`arch=ALL` 时也只保留一份。下载后先解压，`apk` 使用 `apk add --allow-untrusted *.apk` 安装，`ipk` 使用 `opkg install *.ipk` 安装。
 
-## 页面预览
-![Homepage](Homepage.png)
-</div>
